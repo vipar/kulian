@@ -136,7 +136,7 @@
   wx.config({
       debug: false,
       appId: 'wx270b6d0bb80f6882',
-      timestamp: 1540276022,
+      timestamp: 1540275342,
       nonceStr: 'test111',
       signature: '0a039b70ed1da40cf17c4c45afd65abf3a34b70f',
       jsApiList: [
