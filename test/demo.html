@@ -143,6 +143,7 @@
         	var appId = data.data.appId;
         	var noncestr = data.data.noncestr;
         	var timestamp = data.data.timestamp;
+            console.log(sign +"_"+ appId +"_"+ noncestr + "_" + timestamp);
 					  wx.config({
 					      debug: false,
 					      appId: appId,
@@ -188,7 +189,6 @@
 					        'openCard'
 					      ]
 					  });
-            console.log(JSON.stringify(data));
         }
     });
 </script>
