@@ -139,54 +139,58 @@
         type: "get",
         dataType: "jsonp", //返回JSONP格式的数据，此值固定
         success: function (data) {
+        	var sign = data.data.signature;
+        	var appId = data.data.appId;
+        	var noncestr = data.data.noncestr;
+        	var timestamp = data.data.timestamp;
+					  wx.config({
+					      debug: false,
+					      appId: appId,
+					      timestamp: timestamp,
+					      nonceStr: noncestr,
+					      signature: sign,
+					      jsApiList: [
+					        'checkJsApi',
+					        'onMenuShareTimeline',
+					        'onMenuShareAppMessage',
+					        'onMenuShareQQ',
+					        'onMenuShareWeibo',
+					        'onMenuShareQZone',
+					        'hideMenuItems',
+					        'showMenuItems',
+					        'hideAllNonBaseMenuItem',
+					        'showAllNonBaseMenuItem',
+					        'translateVoice',
+					        'startRecord',
+					        'stopRecord',
+					        'onVoiceRecordEnd',
+					        'playVoice',
+					        'onVoicePlayEnd',
+					        'pauseVoice',
+					        'stopVoice',
+					        'uploadVoice',
+					        'downloadVoice',
+					        'chooseImage',
+					        'previewImage',
+					        'uploadImage',
+					        'downloadImage',
+					        'getNetworkType',
+					        'openLocation',
+					        'getLocation',
+					        'hideOptionMenu',
+					        'showOptionMenu',
+					        'closeWindow',
+					        'scanQRCode',
+					        'chooseWXPay',
+					        'openProductSpecificView',
+					        'addCard',
+					        'chooseCard',
+					        'openCard'
+					      ]
+					  });
             console.log(JSON.stringify(data));
         }
     });
-  wx.config({
-      debug: false,
-      appId: 'wx270b6d0bb80f6882',
-      timestamp: 1540276022,
-      nonceStr: 'test111',
-      signature: '0a039b70ed1da40cf17c4c45afd65abf3a34b70f',
-      jsApiList: [
-        'checkJsApi',
-        'onMenuShareTimeline',
-        'onMenuShareAppMessage',
-        'onMenuShareQQ',
-        'onMenuShareWeibo',
-        'onMenuShareQZone',
-        'hideMenuItems',
-        'showMenuItems',
-        'hideAllNonBaseMenuItem',
-        'showAllNonBaseMenuItem',
-        'translateVoice',
-        'startRecord',
-        'stopRecord',
-        'onVoiceRecordEnd',
-        'playVoice',
-        'onVoicePlayEnd',
-        'pauseVoice',
-        'stopVoice',
-        'uploadVoice',
-        'downloadVoice',
-        'chooseImage',
-        'previewImage',
-        'uploadImage',
-        'downloadImage',
-        'getNetworkType',
-        'openLocation',
-        'getLocation',
-        'hideOptionMenu',
-        'showOptionMenu',
-        'closeWindow',
-        'scanQRCode',
-        'chooseWXPay',
-        'openProductSpecificView',
-        'addCard',
-        'chooseCard',
-        'openCard'
-      ]
-  });
 </script>
 <script src="./demofi/zepto.min.js"></script>
 <script src="./demofi/demo.js"> </script>
