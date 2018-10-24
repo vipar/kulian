@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <!-- saved from url=(0037)http://203.195.235.76/jssdk/#menu-pay -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+   
   <title>微信JS-SDK Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <link rel="stylesheet" href="./demofi/style.css">
@@ -146,7 +146,7 @@
         	var timestamp = data.data.timestamp;
         	$('#t1').html(sign +"_"+ appId +"_"+ noncestr + "_" + timestamp)
 					  wx.config({
-					      debug: false,
+					      debug: true,
 					      appId: appId,
 					      timestamp: timestamp,
 					      nonceStr: noncestr,
