@@ -137,16 +137,9 @@
    $.ajax({
         url: "http://localhost:8083/h5-api/wechat/genOrder?key=test1",
         type: "get",
-        data: req_data,
         dataType: "jsonp", //返回JSONP格式的数据，此值固定
-        jsonp: "123123", //回调函数的名字，此值固定
-        timeout: 30000,
         success: function (data) {
             console.log(JSON.stringify(data));
-            lock_req = false;
-        },
-        error: function () {
-            lock_req = false;
         }
     });
   wx.config({
