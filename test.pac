@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) {
-  if (shExpMatch(url, "*baidu*") ||
+  if (shExpMatch(url, "*bkex*") ||
       shExpMatch(url, "*google-analytics.com/j/collect*") ||
       shExpMatch(url, "*api.growingio.com*") ||
       shExpMatch(url, "*tags.growingio.com*") ||
