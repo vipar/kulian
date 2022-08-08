@@ -34,6 +34,7 @@
 ||google.com/xjs/*
 ||fonts.gstatic.com/*
 ||bkex.com/socket.io/*
+||*EIO=
 ||bkex.com/api/*
 ||bkex.com/static/js/w.min.js
 ||bkex.com/static/css/init.css?v=v70
