@@ -14,18 +14,18 @@ function randomProxy()
     switch( Math.floor( Math.random() * 5 ) )
     {
         case 0:
-            return "SOCKS5 18.141.235.130:10801";
+            return "PROXY 18.141.235.130:10801";
             break;
         case 1:
-            return "SOCKS5 18.141.235.130:10819";
+            return "PROXY 18.141.235.130:10819";
             break;
         case 2:
-            return "SOCKS5 18.141.235.130:10656";
+            return "PROXY 18.141.235.130:10656";
             break;
         case 3:
-            return "SOCKS5 18.141.235.130:10680";
+            return "PROXY 18.141.235.130:10680";
             break;
         case 4:
-            return "SOCKS5 18.141.235.130:10915";
+            return "PROXY 18.141.235.130:10915";
             break;
     }
